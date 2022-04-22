@@ -76,25 +76,13 @@ int main() {
 
     {
         cout << '\n';
-        cout << "[Are you cool?]" << '\n';
-        
-        MyString name;
-        MyString name1("Andrew");
-        MyString name2("andrew");
-        MyString name3("Andrwe");
-        MyString name4("andrwe");
-        MyString name5("Andwer");
-        MyString name6("andwer");
-        cout << "Enter Name: ";
-        cin >> name;
-        while (name != "") {
-            if (name == name1 || name == name2 || name == name3 || name == name4 || name == name5 || name == name6) {
-                cout << name << ", I'm dissapointed. No." << '\n';
-            } else {
-                cout << "Wow, " << name << " is so cool!" << '\n';
-            }
+        cout << "[Test] overload operator>> and <<" << '\n';
+        cout << "Test 1: ";
+        {
+            MyString name;
             cout << "Enter Name: ";
             cin >> name;
+            cout << "Outputting Name: " << name << '\n';
         }
     }
 }
